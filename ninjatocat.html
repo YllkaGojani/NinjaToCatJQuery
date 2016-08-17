@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja to cat</title>
+	<style type="text/css">
+		body{
+			width:500px;
+			height: auto;
+			margin:0px auto;
+			background-color: grey;
+		}
+		#first img{
+			display: block;
+			margin: 10px;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.cat').hide();
+			$('#ninja0').click(function(){
+				$(this).hide();
+				$('#cat0').show();
+			});
+			$('#ninja1').click(function(){
+				$(this).hide();
+				$('#cat1').show();
+			});
+			$('#ninja2').click(function(){
+				$(this).hide();
+				$('#cat2').show();
+			});
+			$('#ninja3').click(function(){
+				$(this).hide();
+				$('#cat3').show();
+			});
+			$('#ninja4').click(function(){
+				$(this).hide();
+				$('#cat4').show();
+			});
+
+			$('#cat0').click(function(){
+				$(this).hide();
+				$('#ninja0').show();_
+			});
+			$('#cat1').click(function(){
+				$(this).hide();
+				$('#ninja1').show();_
+			});
+			$('#cat2').click(function(){
+				$(this).hide();
+				$('#ninja2').show();_
+			});
+			$('#cat3').click(function(){
+				$(this).hide();
+				$('#ninja3').show();_
+			});
+			$('#cat4').click(function(){
+				$(this).hide();
+				$('#ninja4').show();_
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="first">
+		<img src='ninja0.png' id="ninja0" />
+		<img src="cat0.png" id="cat0" class="cat" />		
+		<img src='ninja1.png' id="ninja1"/>
+		<img src="cat1.png" id="cat1" class="cat"/>		
+		<img src='ninja2.png' id="ninja2"/>
+		<img src="cat2.png" id="cat2" class="cat"/>		
+		<img src='ninja3.png' id="ninja3"/>
+		<img src="cat3.png" id="cat3" class="cat"/>		
+		<img src='ninja4.png' id="ninja4"/>
+		<img src="cat4.png" id="cat4" class="cat"/>
+	</div>
+</body>
+</html>
