@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body ul li{
+			list-style-type: none;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//SHORT VERSION OF THE SOLUTION FOR THIS ASSIGNMENT
+			$('#ninja').sortable().on('click','img',function(event){
+				var target = $(this),src = target.attr('src');
+				target.attr('src',/cat/.test(src) ? src.replace('cat','ninja') : src.replace('ninja','cat'));
+			});
+
+			//LONG VERSION OF THE SOLUTION FOR THIS ASSIGNMENT
+			// $('#ninja').sortable();
+			// $('#ninja0').click(function(){
+			// 	var src = $(this).attr('src');
+			// 	if(src =='ninja0.png'){
+			// 		$(this).attr('src','cat0.png');
+			// 	}
+			// 	else{
+			// 		$(this).attr('src','ninja0.png');
+			// 	}
+			// });
+			// 	$('#ninja1').click(function(){
+			// 	var src = $(this).attr('src');
+			// 	if(src =='ninja1.png'){
+			// 		$(this).attr('src','cat1.png');
+			// 	}
+			// 	else{
+			// 		$(this).attr('src','ninja1.png');
+			// 	}
+			// });
+			// $('#ninja2').click(function(){
+			// 	var src = $(this).attr('src');
+			// 	if(src =='ninja2.png'){
+			// 		$(this).attr('src','cat2.png');
+			// 	}
+			// 	else{
+			// 		$(this).attr('src','ninja2.png');
+			// 	}
+			// });
+			// $('#ninja3').click(function(){
+			// 	var src = $(this).attr('src');
+			// 	if(src =='ninja3.png'){
+			// 		$(this).attr('src','cat3.png');
+			// 	}
+			// 	else{
+			// 		$(this).attr('src','ninja3.png');
+			// 	}
+			// });
+			// $('#ninja4').click(function(){
+			// 	var src = $(this).attr('src');
+			// 	if(src =='ninja4.png'){
+			// 		$(this).attr('src','cat4.png');
+			// 	}
+			// 	else{
+			// 		$(this).attr('src','ninja4.png');
+			// 	}
+			// });
+		});
+	</script>
+</head>
+<body>
+	<h1>jQuery Puzzle Assignment</h1>
+	<ul id="ninja">
+		<li><img id="ninja0" src="ninja0.png"></li>
+		<li><img id="ninja1" src="ninja1.png"></li>
+		<li><img id="ninja2" src="ninja2.png"></li>
+		<li><img id="ninja3" src="ninja3.png"></li>
+		<li><img id="ninja4" src="ninja4.png"></li>
+	</ul>
+</body>
+</html>
