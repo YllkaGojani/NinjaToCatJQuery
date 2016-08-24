@@ -1,0 +1,8 @@
+1.Created a new repo on GitHub and called it NinjaToCatJQuery.
+2.Created a local repository also called NinjaToCatJQuery.
+3.Created some files inside my local repository and added content on them.
+4.Added, commited and pushed these changes to GitHub.
+5.Made some more changes to the local copy of my repo and then pushed the changes to GitHub.
+6.Made a step-by-step explaining of my work.
+
+LINK on GitHub:https://github.com/YllkaGojani/NinjaToCatJQuery
